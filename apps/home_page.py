@@ -13,7 +13,7 @@ from PIL import Image
 import streamlit.components.v1 as components
 
 def app():	
-	title = Image.open('title.png')
+	title = Image.open('./title.png')
 	st.image(title, caption=' ')
 
 
