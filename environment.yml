@@ -1,6 +1,7 @@
-name: PreditickerTest
+name: preditickertest
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - plotly==4.14.3
   - pandas==1.2.4
