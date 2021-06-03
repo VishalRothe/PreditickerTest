@@ -1,7 +1,6 @@
 name: PreditickerTest
 channels:
   - conda-forge
-  - postelrich
 dependencies:
   - plotly==4.14.3
   - pandas==1.2.4
@@ -12,5 +11,5 @@ dependencies:
   - Pillow==8.2.0
   - pip
   - pip:
-    - yahoo_fin==0.8.8
-    - yfinance==0.1.59
+    - yahoo_fin
+    - yfinance
