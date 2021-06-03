@@ -5,6 +5,7 @@ channels:
 dependencies:
   - plotly==4.14.3
   - pandas==1.2.4
+  - numpy==1.20.2
   - fbprophet==0.7.1
   - streamlit==0.80.0
   - requests==2.25.1
@@ -13,4 +14,3 @@ dependencies:
   - pip:
     - yahoo_fin
     - yfinance
-    - numpy==1.20.3
