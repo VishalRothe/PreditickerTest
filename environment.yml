@@ -5,7 +5,7 @@ channels:
 dependencies:
   - plotly==4.14.3
   - pandas==1.2.4
-  - numpy==1.20.2
+  - numpy==1.20.3
   - fbprophet==0.7.1
   - streamlit==0.80.0
   - requests==2.25.1
