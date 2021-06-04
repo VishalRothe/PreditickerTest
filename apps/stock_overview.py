@@ -15,7 +15,7 @@ def app():
     START = "2015-01-01"
     TODAY = date.today().strftime("%Y-%m-%d")
 
-    title2 = Image.open('title2.png')
+    title2 = Image.open('Images/title2.png')
     st.image(title2, caption=' ')
 
     ##st.write("<h style='  font-size:50px;'>**Your Stock Overview Assistant**</h>", unsafe_allow_html=True)
@@ -105,7 +105,7 @@ def app():
     plot_candlestick()
 
     st.markdown("<hr/>",unsafe_allow_html=True)
-    pricesummery = Image.open('pricesummery.png')
+    pricesummery = Image.open('Images/pricesummery.png')
     st.image(pricesummery, caption=' ')
     ##st.markdown(f"<h style='text-align: center; font-size:40px; '>Price Summary</h>", unsafe_allow_html=True)
 
@@ -132,7 +132,7 @@ def app():
     
     st.markdown("<hr/>",unsafe_allow_html=True)
 
-    companyesssential = Image.open('companyesssential.png')
+    companyesssential = Image.open('Images/companyesssential.png')
     st.image(companyesssential, caption=' ')
     ##st.markdown(f"<h style='text-align: center; font-size:40px; '>Company Essentials</h>", unsafe_allow_html=True)
 
@@ -170,7 +170,7 @@ def app():
     st.markdown("<hr/>",unsafe_allow_html=True)
 
 
-    companysummery = Image.open('companysummery.png')
+    companysummery = Image.open('Images/companysummery.png')
     st.image(companysummery, caption=' ')
     ##st.markdown(f"<h style='text-align: center; font-size:40px; '>Company Summary</h>", unsafe_allow_html=True)
 
@@ -203,7 +203,7 @@ def app():
     
 
     st.markdown("<hr/>",unsafe_allow_html=True)
-    buss = Image.open('buss.png')
+    buss = Image.open('Images/buss.png')
     st.image(buss, caption=' ')
 
     ##st.markdown(f"<h style='text-align: center; font-size:40px; '>Business summary</h>", unsafe_allow_html=True)
