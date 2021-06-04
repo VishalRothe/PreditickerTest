@@ -99,7 +99,7 @@ def app():
             close=data['Close'],
             name=stock.info['symbol'])])
         fig.update_xaxes(type='category')
-        fig.update_layout(height=1000)
+        fig.update_layout(height=500)
         st.plotly_chart(fig, use_container_width=True)
 
     plot_candlestick()
