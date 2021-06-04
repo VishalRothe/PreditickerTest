@@ -13,7 +13,7 @@ from PIL import Image
 import streamlit.components.v1 as components
 
 def app():	
-	title = Image.open('apps/title.png')
+	title = Image.open('Images/title.png')
 	st.image(title, caption=' ')
 
 
@@ -64,14 +64,14 @@ def app():
 		Changepercent = str(round(component['regularMarketChangePercent'],2))
 		regularMarketChange = str(round(component['regularMarketChange'],2))
 
-		low = Image.open('apps/low.png')
+		low = Image.open('Images/low.png')
 		##st.image(low, caption=' ',width = 100)
 
-		help = Image.open('apps/help.png')
+		help = Image.open('Images/help.png')
 		
 
 
-		if component['apps/regularMarketChange'] > 0:
+		if component['regularMarketChange'] > 0:
 
 
 
@@ -113,7 +113,7 @@ def app():
 
 
 
-	image2 = Image.open('homebg.png')
+	image2 = Image.open('Images/homebg.png')
 	st.image(image2, caption=' ')
 
 
@@ -139,10 +139,10 @@ def app():
 
 
 
-	help = Image.open('apps/help.png')
+	help = Image.open('Images/help.png')
 	st.image(help, caption=' ')
 
-	help2 = Image.open('apps/help2.png')
+	help2 = Image.open('Images/help2.png')
 	st.image(help2, caption=' ')
 
 
