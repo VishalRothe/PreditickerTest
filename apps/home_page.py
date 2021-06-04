@@ -121,10 +121,9 @@ def app():
 	st.markdown("<hr/>", unsafe_allow_html=True)
 	
 	gainers=si.get_day_gainers().head(10)
-
 	with gainer_col:
 		st.write("<h style=' color: green; font-size:40px;'>**Top Gainers**</h>", unsafe_allow_html=True)
-		st.dataframe(gainers)
+		st.dataframe(int(gainers))
 
 
 	losers=si.get_day_losers().head(10)
