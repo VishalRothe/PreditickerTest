@@ -3,7 +3,8 @@ import streamlit as st
 import requests
 
 def app():
-	st.write("hello")
+	st.write("<h style=' color: #0078ff; font-size:50px;'>Stock tweets</h>", unsafe_allow_html=True)
+
 	symbol = st.text_input("Symbol")
 	if symbol=="":
 		r = requests.get("https://api.stocktwits.com/api/2/streams/trending.json")
