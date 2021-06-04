@@ -16,7 +16,7 @@ from PIL import Image
 
 def app():
 
-    titalcalculator = Image.open('titalcalculator.png')
+    titalcalculator = Image.open('Images/titalcalculator.png')
     st.image(titalcalculator, caption=' ')
     
     START = "2015-01-01"
@@ -49,9 +49,9 @@ def app():
     
     if option == 'Select Broker':
         ##st.markdown("<hr/>", unsafe_allow_html=True)
-        calculatorbg0 = Image.open('calculatorbg0.png')
+        calculatorbg0 = Image.open('Images/calculatorbg0.png')
         st.image(calculatorbg0, caption=' ')
-        calculatorbg = Image.open('calculatorbg.png')
+        calculatorbg = Image.open('Images/calculatorbg.png')
         st.image(calculatorbg, caption=' ')
 	    
 
@@ -77,7 +77,7 @@ def app():
   ##   Online Broker Algo
 
     if option == 'Online Broker':
-        selectonline = Image.open('selectonline.png')
+        selectonline = Image.open('Images/selectonline.png')
         st.image(selectonline, caption=' ')
     
 
@@ -92,7 +92,7 @@ def app():
         if option == 'Select':
             ##st.subheader("Select Online Broker algo")
 
-            onlinebrokerbg = Image.open('onlinebrokerbg.png')
+            onlinebrokerbg = Image.open('Images/onlinebrokerbg.png')
             st.image(onlinebrokerbg, caption=' ')
     
 
