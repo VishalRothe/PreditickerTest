@@ -120,7 +120,7 @@ def app():
 	gainer_col, loser_col, active_col = st.beta_columns([1,1,1])
 	st.markdown("<hr/>", unsafe_allow_html=True)
 	
-	gainers=si.get_day_gainers().head(5)
+	gainers=si.get_day_gainers().tail(5)
 	with gainer_col:
 		st.write("<h style=' color: green; font-size:40px;'>**Top Gainers**</h>", unsafe_allow_html=True)
 		st.dataframe(gainers)
