@@ -98,8 +98,7 @@ def app():
 	col1, col2, col3 = st.beta_columns(3)
 
 
-	with col1:
-		 
+	with col1: 
 		write_data(NASDAQ_data)
 	with col2:
 		write_data(NIFTY50_data)
@@ -121,10 +120,10 @@ def app():
 	gainer_col, loser_col, active_col = st.beta_columns([1,1,1])
 	st.markdown("<hr/>", unsafe_allow_html=True)
 	
-	gainers=si.get_day_gainers().head(10)
-	with gainer_col:
-		st.write("<h style=' color: green; font-size:40px;'>**Top Gainers**</h>", unsafe_allow_html=True)
-		st.dataframe(gainers)
+	#gainers=si.get_day_gainers().head(10)
+	#with gainer_col:
+	#	st.write("<h style=' color: green; font-size:40px;'>**Top Gainers**</h>", unsafe_allow_html=True)
+	#	st.dataframe(gainers)
 
 
 	losers=si.get_day_losers().head(10)
