@@ -12,6 +12,6 @@ dependencies:
   - Pillow==8.2.0
   - pip
   - pip:
-    - pystan
+    - Pystan==2.19.1.1
     - yahoo_fin
     - yfinance
