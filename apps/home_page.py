@@ -133,7 +133,7 @@ def app():
 
 	active=si.get_day_most_active().head(10)
 	with gainer_col:
-		st.write("<h style=' color: #DACB4A; font-size:40px;'>**Top gainers**</h>", unsafe_allow_html=True)
+		st.write("<h style=' color: #00ff00; font-size:40px;'>**Top gainers**</h>", unsafe_allow_html=True)
 		st.dataframe(active)
 
 	
