@@ -332,7 +332,7 @@ def app():
             ####################################################################################################3###3
       
 
-            onlinebrokerbg2 = Image.open('Images/onlinebrokerbg2.png')
+            onlinebrokerbg2 = Image.open('Images/onlinebrokerbg2.PNG')
             st.image(onlinebrokerbg2, caption=' ')
     
 
