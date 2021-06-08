@@ -270,7 +270,7 @@ def app():
 
 
                 if option == 'Groww..':
-                    cpgroww = Image.open('Images/cpgroww.png')
+                    cpgroww = Image.open('Images/cpgroww.PNG')
                     st.image(cpgroww, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
