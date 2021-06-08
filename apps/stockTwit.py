@@ -12,8 +12,8 @@ def app():
 		r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
 
 	data = r.json()
-	dataStatus = bool(data['messages'])
-	if dataStatus == True:
+	
+	if data == null:
 		st.error("invalid ticker")
 		raise Exception("invalid ticker")
 	for message in data['messages']:
