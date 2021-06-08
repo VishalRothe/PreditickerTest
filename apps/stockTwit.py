@@ -13,7 +13,7 @@ def app():
 
 	data = r.json()
 	dataStatus = bool(data['messages'])
-	if dataStatus == False:
+	if dataStatus == True:
 		st.error("invalid ticker")
 		raise Exception("invalid ticker")
 	for message in data['messages']:
