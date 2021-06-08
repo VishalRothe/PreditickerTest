@@ -230,7 +230,7 @@ def app():
 
 
                 if option == 'Upstox..':
-                    cpupstox = Image.open('Images/cpupstox.png')
+                    cpupstox = Image.open('Images/cpupstox.PNG')
                     st.image(cpupstox, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")

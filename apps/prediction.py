@@ -12,7 +12,6 @@ from .fetch_news import retrieve_news
 
 def app():
 
-
 	START = "2015-01-01"
 	TODAY = date.today().strftime("%Y-%m-%d")
 	st.write("<h style=' color: #0078ff; font-size:50px;'>Stock Price Prediction</h>", unsafe_allow_html=True)
