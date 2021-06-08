@@ -12,15 +12,15 @@ def app():
 		r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
 
 	data = r.json()
-	
-	if data == null:
-		st.error("invalid ticker")
-		raise Exception("invalid ticker")
-	for message in data['messages']:
-		st.image(message['user']['avatar_url'])
-		st.write(message['user']['username'])
-		st.write(message['created_at'])
-		st.write(message['body'])
+
+	try:
+		for message in data['messages']:
+			st.image(message['user']['avatar_url'])
+			st.write(message['user']['username'])
+			st.write(message['created_at'])
+			st.write(message['body'])
+	except:
+		st.error("Invalid Ticker")
 		
 		
 
