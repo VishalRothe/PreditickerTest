@@ -34,7 +34,7 @@ def app():
 
     stock = yf.Ticker(selected_stock)
 
-    if(!data):
+    if data.empty:
         raise Exception("not a valid ticker")
 
     stock_name = selected_stock
