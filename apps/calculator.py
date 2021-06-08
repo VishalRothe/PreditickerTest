@@ -190,7 +190,7 @@ def app():
                 option = st.selectbox("    ",('Upstox..','Zerodha..','Groww..'))
 
                 if option == 'Zerodha..':
-                    cptitlezerodha = Image.open('Images/cptitlezerodha.png')
+                    cptitlezerodha = Image.open('Images/cptitlezerodha.PNG')
                     st.image(cptitlezerodha, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
