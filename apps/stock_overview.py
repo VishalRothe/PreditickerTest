@@ -34,6 +34,8 @@ def app():
 
     stock = yf.Ticker(selected_stock)
 
+    st.write(data)
+
     stock_name = selected_stock
     longname = stock.info['longName']
     exchange = stock.info['exchange']
