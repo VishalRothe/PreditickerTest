@@ -13,7 +13,7 @@ def app():
 
 	data = r.json()
 	empty = bool(data)
-	if empty==True:
+	if empty==False:
 		st.error("enter a valid ticker")
 		raise Exception("Enter a valid ticker")
 
