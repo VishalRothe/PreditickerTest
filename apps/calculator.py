@@ -16,7 +16,7 @@ from PIL import Image
 
 def app():
 
-    titalcalculator = Image.open('titalcalculator.png')
+    titalcalculator = Image.open('Images/titalcalculator.png')
     st.image(titalcalculator, caption=' ')
     
     START = "2015-01-01"
@@ -49,13 +49,13 @@ def app():
     
     if option == 'Select Broker':
         ##st.markdown("<hr/>", unsafe_allow_html=True)
-        calculatorbg0 = Image.open('calculatorbg0.png')
+        calculatorbg0 = Image.open('Images/calculatorbg0.png')
         st.image(calculatorbg0, caption=' ')
-        calculatorbg = Image.open('calculatorbg.png')
+        calculatorbg = Image.open('Images/calculatorbg.png')
         st.image(calculatorbg, caption=' ')
 
     if option == 'Compare Online Broker':
-        comparetitle = Image.open('comparetitle.png')
+        comparetitle = Image.open('Images/comparetitle.png')
         st.image(comparetitle, caption=' ')
 
         cpi1, cpi2 = st.beta_columns([1,1])
@@ -63,7 +63,7 @@ def app():
             option = st.selectbox("    ",('Zerodha.','Upstox.','Groww.'))
 
             if option == 'Zerodha.':
-                cptitlezerodha = Image.open('cptitlezerodha.png')
+                cptitlezerodha = Image.open('Images/cptitlezerodha.png')
                 st.image(cptitlezerodha, caption=' ')
 
                 st.info(f"""**Dilevry equity**""")
@@ -103,7 +103,7 @@ def app():
 
 
                 if option == 'Upstox.':
-                    cpupstox = Image.open('cpupstox.png')
+                    cpupstox = Image.open('Images/cpupstox.png')
                     st.image(cpupstox, caption=' ')
                     st.info(f"""**Dilevry equity**""")
                   
@@ -142,7 +142,7 @@ def app():
 
 
                 if option == 'Groww.':
-                    cpgroww = Image.open('cpgroww.png')
+                    cpgroww = Image.open('Images/cpgroww.png')
                     st.image(cpgroww, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
@@ -190,7 +190,7 @@ def app():
                 option = st.selectbox("    ",('Upstox..','Zerodha..','Groww..'))
 
                 if option == 'Zerodha..':
-                    cptitlezerodha = Image.open('cptitlezerodha.png')
+                    cptitlezerodha = Image.open('Images/cptitlezerodha.png')
                     st.image(cptitlezerodha, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
@@ -230,7 +230,7 @@ def app():
 
 
                 if option == 'Upstox..':
-                    cpupstox = Image.open('cpupstox.png')
+                    cpupstox = Image.open('Images/cpupstox.png')
                     st.image(cpupstox, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
@@ -270,7 +270,7 @@ def app():
 
 
                 if option == 'Groww..':
-                    cpgroww = Image.open('cpgroww.png')
+                    cpgroww = Image.open('Images/cpgroww.png')
                     st.image(cpgroww, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
@@ -312,7 +312,7 @@ def app():
   ##   Online Broker Algo
 
     if option == 'Online Broker':
-        selectonline = Image.open('selectonline.png')
+        selectonline = Image.open('Images/selectonline.png')
         st.image(selectonline, caption=' ')
     
 
@@ -327,12 +327,12 @@ def app():
         if option == 'Select':
             ##st.subheader("Select Online Broker algo")
 
-            onlinebrokerbg = Image.open('onlinebrokerbg.png')
+            onlinebrokerbg = Image.open('Images/onlinebrokerbg.png')
             st.image(onlinebrokerbg, caption=' ')
             ####################################################################################################3###3
       
 
-            onlinebrokerbg2 = Image.open('onlinebrokerbg2.png')
+            onlinebrokerbg2 = Image.open('Images/onlinebrokerbg2.png')
             st.image(onlinebrokerbg2, caption=' ')
     
 
@@ -486,7 +486,7 @@ def app():
             ################################################################################
             
             st.markdown("<hr/>", unsafe_allow_html=True)
-            zerodhatitle = Image.open('zerodhatitle.png')
+            zerodhatitle = Image.open('Images/zerodhatitle.png')
             st.image(zerodhatitle, caption=' ')
             ##st.write("<h style=' color: #0078ff; font-size:30px;'>Zerodha Brokerage calculator. List of all charges and taxes</h>", unsafe_allow_html=True)                    
             ##st.markdown("<hr/>", unsafe_allow_html=True)
@@ -720,7 +720,7 @@ def app():
                 st.markdown(f""" """)
                 st.info(f"""**Net P&L : {net_pl444}**""")
                 
-            zerodhabg = Image.open('zerodhabg.png')
+            zerodhabg = Image.open('Images/zerodhabg.png')
             st.image(zerodhabg, caption=' ')
 
 
@@ -892,7 +892,7 @@ def app():
             ################################################################################
             
             st.markdown("<hr/>", unsafe_allow_html=True)
-            upstoxtitle = Image.open('upstoxtitle.png')
+            upstoxtitle = Image.open('Images/upstoxtitle.png')
             st.image(upstoxtitle, caption=' ')
             ##st.write("<h style=' color: #0078ff; font-size:30px;'>Zerodha Brokerage calculator. List of all charges and taxes</h>", unsafe_allow_html=True)                    
             ##st.markdown("<hr/>", unsafe_allow_html=True)
@@ -1131,7 +1131,7 @@ def app():
                 st.info(f"""**Net P&L : {net_pl444}**""")
 
 
-            upstoxbg = Image.open('upstoxbg.png')
+            upstoxbg = Image.open('Images/upstoxbg.png')
             st.image(upstoxbg, caption=' ')
 
 
@@ -1297,7 +1297,7 @@ def app():
             ################################################################################
             
             st.markdown("<hr/>", unsafe_allow_html=True)
-            growwtitle = Image.open('growwtitle.png')
+            growwtitle = Image.open('Images/growwtitle.png')
             st.image(growwtitle, caption=' ')
             ##st.write("<h style=' color: #0078ff; font-size:30px;'>Zerodha Brokerage calculator. List of all charges and taxes</h>", unsafe_allow_html=True)                    
             ##st.markdown("<hr/>", unsafe_allow_html=True)
@@ -1531,5 +1531,5 @@ def app():
                 st.markdown(f""" """)
                 st.info(f"""**Net P&L : {net_pl444}**""")
                 
-            growwbg = Image.open('growwbg.png')
+            growwbg = Image.open('Images/growwbg.png')
             st.image(growwbg, caption=' ')
