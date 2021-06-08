@@ -26,8 +26,6 @@ def app():
 	def load_data(ticker):
 		data = yf.download(ticker, START, TODAY)
 		data.reset_index(inplace = True)
-		st.write("invalid ticker")
-		invalidTicker = True
 		return data
 
 	data = load_data(selected_stock)
