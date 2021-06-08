@@ -4,7 +4,9 @@ from apps import home_page, prediction, stock_overview, calculator, news_module,
 
 app = MultiApp()
 
-st.set_page_config(page_title="PrediTicker", page_icon=None, layout='wide', initial_sidebar_state='collapsed')
+st.set_page_config(page_title="PrediTicker", page_icon=None, layout='wide', initial_sidebar_state='collapsed', 
+	backgroundColor =#9A5151
+)
 
 app.add_app("Home", home_page.app)
 app.add_app("Stock Overview", stock_overview.app)
