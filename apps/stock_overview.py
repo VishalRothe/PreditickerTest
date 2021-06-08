@@ -34,7 +34,8 @@ def app():
 
     stock = yf.Ticker(selected_stock)
 
-    st.write(data)
+    if(!data):
+        raise Exception("not a valid ticker")
 
     stock_name = selected_stock
     longname = stock.info['longName']
