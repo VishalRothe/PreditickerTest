@@ -33,7 +33,7 @@ def app():
         data.reset_index(inplace = True)
         if data.empty:
             st.error("enter a valid ticker")
-            rasise Exception("enter a valid ticker")
+            raise Exception("enter a valid ticker")
         return data
 
 
