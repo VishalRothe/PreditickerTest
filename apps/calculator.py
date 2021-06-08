@@ -27,7 +27,6 @@ def app():
 
     ##selected_stock = st.text_input(" ","IRCTC.NS")
 
-    @st.cache
     def load_data(ticker):
         data = yf.download(ticker, START, TODAY)
         data.reset_index(inplace = True)
