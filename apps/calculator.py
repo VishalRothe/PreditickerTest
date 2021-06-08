@@ -55,7 +55,7 @@ def app():
         st.image(calculatorbg, caption=' ')
 
     if option == 'Compare Online Broker':
-        comparetitle = Image.open('Images/comparetitle.png')
+        comparetitle = Image.open('Images/comparetitle.PNG')
         st.image(comparetitle, caption=' ')
 
         cpi1, cpi2 = st.beta_columns([1,1])
@@ -63,7 +63,7 @@ def app():
             option = st.selectbox("    ",('Zerodha.','Upstox.','Groww.'))
 
             if option == 'Zerodha.':
-                cptitlezerodha = Image.open('Images/cptitlezerodha.png')
+                cptitlezerodha = Image.open('Images/cptitlezerodha.PNG')
                 st.image(cptitlezerodha, caption=' ')
 
                 st.info(f"""**Dilevry equity**""")
@@ -103,7 +103,7 @@ def app():
 
 
                 if option == 'Upstox.':
-                    cpupstox = Image.open('Images/cpupstox.png')
+                    cpupstox = Image.open('Images/cpupstox.PNG')
                     st.image(cpupstox, caption=' ')
                     st.info(f"""**Dilevry equity**""")
                   
@@ -142,7 +142,7 @@ def app():
 
 
                 if option == 'Groww.':
-                    cpgroww = Image.open('Images/cpgroww.png')
+                    cpgroww = Image.open('Images/cpgroww.PNG')
                     st.image(cpgroww, caption=' ')
 
                     st.info(f"""**Dilevry equity**""")
@@ -486,7 +486,7 @@ def app():
             ################################################################################
             
             st.markdown("<hr/>", unsafe_allow_html=True)
-            zerodhatitle = Image.open('Images/zerodhatitle.png')
+            zerodhatitle = Image.open('Images/zerodhatitle.PNG')
             st.image(zerodhatitle, caption=' ')
             ##st.write("<h style=' color: #0078ff; font-size:30px;'>Zerodha Brokerage calculator. List of all charges and taxes</h>", unsafe_allow_html=True)                    
             ##st.markdown("<hr/>", unsafe_allow_html=True)
@@ -720,7 +720,7 @@ def app():
                 st.markdown(f""" """)
                 st.info(f"""**Net P&L : {net_pl444}**""")
                 
-            zerodhabg = Image.open('Images/zerodhabg.png')
+            zerodhabg = Image.open('Images/zerodhabg.PNG')
             st.image(zerodhabg, caption=' ')
 
 
@@ -892,7 +892,7 @@ def app():
             ################################################################################
             
             st.markdown("<hr/>", unsafe_allow_html=True)
-            upstoxtitle = Image.open('Images/upstoxtitle.png')
+            upstoxtitle = Image.open('Images/upstoxtitle.PNG')
             st.image(upstoxtitle, caption=' ')
             ##st.write("<h style=' color: #0078ff; font-size:30px;'>Zerodha Brokerage calculator. List of all charges and taxes</h>", unsafe_allow_html=True)                    
             ##st.markdown("<hr/>", unsafe_allow_html=True)
@@ -1131,7 +1131,7 @@ def app():
                 st.info(f"""**Net P&L : {net_pl444}**""")
 
 
-            upstoxbg = Image.open('Images/upstoxbg.png')
+            upstoxbg = Image.open('Images/upstoxbg.PNG')
             st.image(upstoxbg, caption=' ')
 
 
@@ -1297,7 +1297,7 @@ def app():
             ################################################################################
             
             st.markdown("<hr/>", unsafe_allow_html=True)
-            growwtitle = Image.open('Images/growwtitle.png')
+            growwtitle = Image.open('Images/growwtitle.PNG')
             st.image(growwtitle, caption=' ')
             ##st.write("<h style=' color: #0078ff; font-size:30px;'>Zerodha Brokerage calculator. List of all charges and taxes</h>", unsafe_allow_html=True)                    
             ##st.markdown("<hr/>", unsafe_allow_html=True)
@@ -1531,5 +1531,5 @@ def app():
                 st.markdown(f""" """)
                 st.info(f"""**Net P&L : {net_pl444}**""")
                 
-            growwbg = Image.open('Images/growwbg.png')
+            growwbg = Image.open('Images/growwbg.PNG')
             st.image(growwbg, caption=' ')
