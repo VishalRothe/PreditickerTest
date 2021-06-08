@@ -12,7 +12,7 @@ app.add_app("Prediction", prediction.app)
 app.add_app("Brokrage Calculator", calculator.app)
 app.add_app("News & More", news_module.app)
 app.add_app("Stocktwit", stockTwit.app)
-app.add_app("Stocktwit", index.app)
+app.add_app("index", index.app)
 
 app.run()
 

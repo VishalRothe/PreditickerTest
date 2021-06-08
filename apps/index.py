@@ -12,7 +12,7 @@ from PIL import Image
 
 import streamlit.components.v1 as components
 def app():	
-	title = Image.open('title.png')
+	title = Image.open('Images/title.png')
 	st.image(title, caption=' ')
 	st.markdown("<hr/>", unsafe_allow_html=True)
 	
@@ -56,10 +56,10 @@ def app():
 		Changepercent = str(round(component['regularMarketChangePercent'],2))
 		regularMarketChange = str(round(component['regularMarketChange'],2))
 
-		low = Image.open('low.png')
+		low = Image.open('Images/low.png')
 		##st.image(low, caption=' ',width = 100)
 
-		help = Image.open('help.png')
+		help = Image.open('Images/help.png')
 		
 
 
