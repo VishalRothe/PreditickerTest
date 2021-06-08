@@ -31,10 +31,11 @@ def app():
     def load_data(ticker):
         data = yf.download(ticker, START, TODAY)
         data.reset_index(inplace = True)
+        if data.empty:
+            st.error("enter a valid ticker")
+            rasise Exception("enter a valid ticker")
         return data
 
-    
-    
 
     ##st.write("<h style=' font-size:50px;'>**Brokrage Calculator**</h>", unsafe_allow_html=True)
     ##st.write("<h style=' color: #0078ff; font-size:15px;'>**Use the brokerage calculator to calculate exactly how much you will pay in brokerage and your breakeven**</h>", unsafe_allow_html=True)
