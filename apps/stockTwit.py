@@ -12,7 +12,7 @@ def app():
 		r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
 
 	data = r.json()
-	if data.empty:
+	if data.length == 0:
 		st.error("enter a valid ticker")
 		raise Exception("Enter a valid ticker")
 
