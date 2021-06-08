@@ -470,17 +470,6 @@ def app():
        
                 st.markdown(" ")
                 ##st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{current_price} {currency}**</h>", unsafe_allow_html=True)
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             ################################################################################

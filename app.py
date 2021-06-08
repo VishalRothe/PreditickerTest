@@ -1,6 +1,6 @@
 import streamlit as st
 from multiapp import MultiApp
-from apps import home_page, prediction, stock_overview, calculator, news_module, stockTwit# importing app modules
+from apps import home_page, prediction, stock_overview, calculator, news_module, stockTwit, index# importing app modules
 
 app = MultiApp()
 
@@ -12,6 +12,7 @@ app.add_app("Prediction", prediction.app)
 app.add_app("Brokrage Calculator", calculator.app)
 app.add_app("News & More", news_module.app)
 app.add_app("Stocktwit", stockTwit.app)
+app.add_app("Stocktwit", index.app)
 
 app.run()
 
